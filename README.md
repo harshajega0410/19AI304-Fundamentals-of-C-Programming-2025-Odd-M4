@@ -41,7 +41,21 @@
 ### Step 14: 
   Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    int num = 44;
+    int shift = 3;
+    int result;
+    result = num << shift;
+    printf("Number before left shift: %d\n", num);
+    printf("Number after left shift by %d positions: %d\n", shift, result);
+    return 0;
+}
+```
 # Output:
+<img width="866" height="487" alt="image" src="https://github.com/user-attachments/assets/0e9e5dcf-635a-4743-b4fc-0b786677d145" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -89,7 +103,21 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 13: 
   Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    int a, b;
+    scanf("%d %d", &a, &b);
+    if(a == b)
+        printf("Both numbers are equal.\n");
+    if(a != b)
+        printf("Both numbers are not equal.\n");
+    return 0;
+}
+```
 # Output:
+<img width="838" height="522" alt="image" src="https://github.com/user-attachments/assets/3c4b7922-ffa8-49b4-9785-3ed18c8a34f2" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -137,7 +165,23 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 11: 
  Stop
 # Program:
+```
+#include <stdio.h>
+#include <ctype.h>
+int main() {
+    char str[100];
+    int i;
+    scanf("%[^\n]", str);
+    for(i = 0; str[i] != '\0'; i++) {
+        str[i] = tolower(str[i]);
+    }
+    printf("String in lowercase: %s\n", str);
+    return 0;
+}
+```
 # Output:
+<img width="837" height="487" alt="image" src="https://github.com/user-attachments/assets/73d8bb1e-5473-48f5-9594-26e41d08a592" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -185,7 +229,24 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 7: 
   Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    char str[200];
+    int i = 0, count = 1;
+    scanf("%[^\n]", str);
+    do {
+        if(str[i] == ' ' || str[i] == '\t')
+            count++;
+        i++;
+    } while(str[i] != '\0');
+    printf("Total number of words: %d\n", count);
+    return 0;
+}
+```
 # Output:
+<img width="836" height="465" alt="image" src="https://github.com/user-attachments/assets/d7134b8d-de47-41fe-b994-c2abeadbd8e1" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -220,7 +281,30 @@ To build a C program to convert a string as described above, using a user-define
 ### Step 6: 
  Stop
 # Program:
+```
+#include <stdio.h>
+int main() {
+    char str1[100], str2[100];
+    int i = 0, flag = 0;
+    scanf("%s", str1);
+    scanf("%s", str2);
+    while(str1[i] != '\0' || str2[i] != '\0') {
+        if(str1[i] != str2[i]) {
+            flag = 1;
+            break;
+        }
+        i++;
+    }
+    if(flag == 0)
+        printf("Both strings are equal.\n");
+    else
+        printf("Strings are not equal.\n");
+    return 0;
+}
+```
 # Output:
+<img width="861" height="520" alt="image" src="https://github.com/user-attachments/assets/a0fe7237-2dfd-4998-992c-e1c6a4dc9f34" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
